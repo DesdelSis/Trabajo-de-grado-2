@@ -23,7 +23,7 @@ function capturaLogin(){
 function capturaRegistro(){
 	var nuevoUsuario=document.getElementById("nuevoUsuario").value;
 	var identificacion=document.getElementById("identificacion").value;
-	var crearContraseña=document.getElementById("crearContraseña").value;
+	
 
 	if (nuevoUsuario==""){
 		alert("Debe llenar todos los campos");
@@ -33,11 +33,8 @@ function capturaRegistro(){
 	alert("Debe llenar todos los campos");
 	document.getElementById("identificacion").focus();
 	}
-	else if (crearContraseña==""){
-	alert("Debe llenar todos los campos");
-	document.getElementById("crearContraseña").focus();
-	}
-	console.log(nuevoUsuario+" "+identificacion+" "+crearContraseña);
+	
+	console.log(nuevoUsuario+" "+identificacion);
 }
 
 	navigator.mediaDevices.getUserMedia({audio:false, video:true}).then((stream)=>{
